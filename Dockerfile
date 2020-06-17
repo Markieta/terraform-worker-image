@@ -2,7 +2,7 @@
 FROM ubuntu:xenial
 
 # Inject the CA certificates.
-#ADD ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+ADD ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
 # Install software used by Terraform Enterprise.
 RUN apt-get update && apt-get install -y --no-install-recommends \
